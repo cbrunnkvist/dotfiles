@@ -1,0 +1,188 @@
+# Compiled by Conny Brunnkvist <cbrunnkvist@gmail.com>
+# Install by using `brew bundle`
+
+
+##  ____                 _                       
+## |  _ \  _____   _____| | ___  _ __   ___ _ __ 
+## | | | |/ _ \ \ / / _ \ |/ _ \| '_ \ / _ \ '__|
+## | |_| |  __/\ V /  __/ | (_) | |_) |  __/ |   
+## |____/ \___| \_/ \___|_|\___/| .__/ \___|_|   
+##                              |_|              
+
+# basic development
+brew 'cmake'
+brew 'pkg-config'
+
+# C unit testing framework
+brew 'check'
+
+# Scala / Coursier
+tap 'coursier/formulas'
+brew 'coursier'
+
+# The generic driver for the .NET CLI
+brew 'dotnet'
+
+# GitHub CLI
+brew 'gh'
+
+# Git Large File Support
+brew 'git-lfs'
+
+# Go is a tool for managing Go source code.
+brew 'go'
+
+# Manage multiple Node.js versions
+brew 'nvm'
+
+# Non-system Python 3
+brew 'python-setuptools'
+brew 'python@3'
+
+# Rust toolchain installer
+brew 'rustup-init'
+
+# Command-line JSON processor
+brew 'jq'
+
+# Command-line YAML processor
+brew 'yq'
+
+# modern, user-friendly command-line HTTP client for the API era.
+brew 'httpie'
+
+# Collaboration platform for API development
+cask 'postman'
+
+# Postman CLI
+brew 'newman'
+
+# VS Code
+cask 'visual-studio-code'
+
+
+##  _   _      _                      _    
+## | \ | | ___| |___      _____  _ __| | __
+## |  \| |/ _ \ __\ \ /\ / / _ \| '__| |/ /
+## | |\  |  __/ |_ \ V  V / (_) | |  |   < 
+## |_| \_|\___|\__| \_/\_/ \___/|_|  |_|\_\
+##                                         
+
+# Network sniffer UI + tshark CLI
+cask 'wireshark'
+
+# Network mapper UI + nmap CLI
+cask 'zenmap'
+
+# sends arp and/or ip pings to a given host
+brew 'arping'
+
+# Perform common IP calculations
+brew 'ipcalc'
+
+# Global p2p merkle-dag filesystem
+brew 'ipfs'
+
+# a network diagnostic tool (traceroute)
+brew 'mtr'
+
+# Rclone syncs files to and from cloud storage providers
+brew 'rclone'
+
+# tool for managing Amazon S3 storage space and Amazon CloudFront content delivery network
+brew 's3cmd'
+
+# user interface to the TELNET protocol
+brew 'telnet'
+
+
+##  ____                       _ _         
+## / ___|  ___  ___ _   _ _ __(_) |_ _   _ 
+## \___ \ / _ \/ __| | | | '__| | __| | | |
+##  ___) |  __/ (__| |_| | |  | | |_| |_| |
+## |____/ \___|\___|\__,_|_|  |_|\__|\__, |
+##                                   |___/ 
+
+# Password recovery
+brew 'crunch'
+brew 'hashcat'
+brew 'hcxtools'
+brew 'john-jumbo'
+brew 'aircrack-ng'
+
+# scan for subdomains using bruteforcing techniques
+brew 'dnsmap'
+
+# Netcat with FW/IDS/IPS evasion, self-inject-, bind- and reverse shell
+brew 'pwncat'
+
+# "The fastest way to identify anything" (guess filetype)
+brew 'lemmeknow'
+
+# Tool for downloading RTMP streaming media
+brew 'rtmpdump'
+
+# CLI client for Shodan.io
+brew 'shodan'
+
+
+## __        ___           _                      _ 
+## \ \      / / |__   __ _| |_ _____   _____ _ __| |
+##  \ \ /\ / /| '_ \ / _` | __/ _ \ \ / / _ \ '__| |
+##   \ V  V / | | | | (_| | ||  __/\ V /  __/ |  |_|
+##    \_/\_/  |_| |_|\__,_|\__\___| \_/ \___|_|  (_)
+##                                                  
+
+# MOAR GNU UTILz (sponge, parallel, ts, etc.)
+brew 'coreutils'
+brew 'moreutils'
+
+# ls Deluxe
+brew 'lsd'
+
+# monitor the progress of data through a pipe
+brew 'pv'
+
+# a cat(1) clone with syntax highlighting and Git integration
+brew 'bat'
+
+# VisiData – a terminal utility for exploring and arranging tabular data
+tap 'saulpw/vd'
+brew 'visidata'
+
+# (rg) Search tool like grep and The Silver Searcher
+brew 'ripgrep'
+
+# frontend for generic colouriser grcat "(1)
+brew 'grc'
+
+# A collection of simplified and community-driven man pages
+brew 'tldr'
+
+# terminal multiplexer
+brew 'tmux'
+
+# view and edit files in hexadecimal or in ASCII
+brew 'hexedit'
+
+# Compress or decompress .xz and .lzma files
+brew 'xz'
+
+# Compress or decompress .zstd files
+brew 'zstd'
+
+# Web browsers
+cask 'brave-browser'
+cask 'tor-browser'
+brew 'proxychains-ng'
+
+# That useless ANSI/ASCII art thing you see in screenshots
+brew 'neofetch'
+
+
+##    _  _     _  _   
+##  _| || |_ _| || |_ 
+## |_  ..  _|_  ..  _|
+## |_      _|_      _|
+##   |_||_|   |_||_|  
+##                    
