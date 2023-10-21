@@ -36,4 +36,5 @@ then
 fi
 
 if test -z "$VSCODE_INJECTION" ; then neofetch ; fi
-echo iface $(tput md setaf 145)en0$(tput sgr0)', addr '$(tput setaf 212)$(ifdata -pa en0)$(tput sgr0)', mask '$(tput setaf 179)$(ifdata -pn en0)$(tput sgr0)', gw '$(tput setaf 29)$(ipconfig getoption en0 router) 
+# this used to be one line: now it's in .config/neofetch/config.conf instead
+# echo iface $(tput md setaf 145)en0$(tput sgr0)', addr '$(tput setaf 212)$(ifdata -pa en0)$(tput sgr0)', mask '$(tput setaf 179)$(ifdata -pn en0)$(tput sgr0)', gw '$(tput setaf 29)$(ipconfig getoption en0 router) 
