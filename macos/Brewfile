@@ -159,6 +159,9 @@ brew 'grc'
 # A collection of simplified and community-driven man pages
 brew 'tldr'
 
+# Banner-like program prints strings as ASCII art
+brew 'figlet'
+
 # terminal multiplexer
 brew 'tmux'
 
