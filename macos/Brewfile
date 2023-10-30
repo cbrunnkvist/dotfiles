@@ -182,6 +182,14 @@ brew 'proxychains-ng'
 # That useless ANSI/ASCII art thing you see in screenshots
 brew 'neofetch'
 
+# (bx) do stuff like https://bitcoin.stackexchange.com/a/95458/145741
+brew 'libbitcoin-explorer'
+
+# because peerflix isn't packaged ¯\_(ツ)_/¯
+brew 'webtorrent-cli'
+
+# becaue `unrar` is not distibuted as brew anymore
+cask 'the-unarchiver'
 
 ##    _  _     _  _   
 ##  _| || |_ _| || |_ 
