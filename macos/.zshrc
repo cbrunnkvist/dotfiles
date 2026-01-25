@@ -41,13 +41,18 @@ then
   compinit
 fi
 
-if test -z "$VSCODE_INJECTION" ; then neofetch ; fi
+if [[ -o interactive && ${SHLVL:-1} -le 1 ]]; then
+  if [[ -z "$VSCODE_INJECTION" ]]; then
+    neofetch
+  fi
+  if [[ -n "${SSH_AUTH_SOCK:-}" ]]; then
+    ssh-add -l >/dev/null 2>&1 || ssh-add --apple-load-keychain
+  fi
+fi
 # this used to be one line: now it's in .config/neofetch/config.conf instead
 # echo iface $(tput md setaf 145)en0$(tput sgr0)', addr '$(tput setaf 212)$(ifdata -pa en0)$(tput sgr0)', mask '$(tput setaf 179)$(ifdata -pn en0)$(tput sgr0)', gw '$(tput setaf 29)$(ipconfig getoption en0 router) 
 alias ipsummary="ipconfig getsummary en0| egrep 'yiaddr|router|subnet_mask'| egrep '(?:[0-9]{1,3}\.){3}[0-9]{1,3}'"
 alias randomstr2pasteboard="openssl rand -base64 15 | tee /dev/tty | pbcopy"
-
-ssh-add --apple-load-keychain
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/conny/.cache/lm-studio/bin"
