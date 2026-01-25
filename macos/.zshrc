@@ -1,10 +1,16 @@
 # prevent "ctrl-d" from terminating interactive shell
 set -o ignoreeof
+# allow '#' comments in the shell, goddamnit zsh
+set -k
+
+# Make word navigation sane
+autoload -U select-word-style
+select-word-style bash
 
 ## brew install nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 ## brew install lsd 
 alias lsd="lsd --group-directories-first --icon-theme=unicode"
@@ -40,3 +46,24 @@ if test -z "$VSCODE_INJECTION" ; then neofetch ; fi
 # echo iface $(tput md setaf 145)en0$(tput sgr0)', addr '$(tput setaf 212)$(ifdata -pa en0)$(tput sgr0)', mask '$(tput setaf 179)$(ifdata -pn en0)$(tput sgr0)', gw '$(tput setaf 29)$(ipconfig getoption en0 router) 
 alias ipsummary="ipconfig getsummary en0| egrep 'yiaddr|router|subnet_mask'| egrep '(?:[0-9]{1,3}\.){3}[0-9]{1,3}'"
 alias randomstr2pasteboard="openssl rand -base64 15 | tee /dev/tty | pbcopy"
+
+ssh-add --apple-load-keychain
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/conny/.cache/lm-studio/bin"
+
+# uv tool install
+export PATH="/Users/conny/.local/bin:$PATH"
+
+# bun completions
+[ -s "/Users/conny/.bun/_bun" ] && source "/Users/conny/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/conny/.antigravity/antigravity/bin:$PATH"
+
+# Amp CLI
+export PATH="/Users/conny/.amp/bin:$PATH"
